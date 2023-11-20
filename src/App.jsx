@@ -1,7 +1,9 @@
+import { SideBar } from "./layouts/Sidebar";
+
 function App() {
   return (
     <>
-      <p className="font-bold underline">Hello world!</p>
+      <SideBar />
     </>
   );
 }
