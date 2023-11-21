@@ -1,11 +1,18 @@
+import DashboardIcon from "../../assets/Icons/Sidebar/Icon-5.svg";
+import NFTIcon from "../../assets/Icons/Sidebar/Icon-4.svg";
+import TablesIcon from "../../assets/Icons/Sidebar/Icon-3.svg";
+import KanbanIcon from "../../assets/Icons/Sidebar/Icon-2.svg";
+import ProfileIcon from "../../assets/Icons/Sidebar/Icon-1.svg";
+import SignIcon from "../../assets/Icons/Sidebar/Icon.svg";
+
 export const buttonData = [
-  { name: "Dashboard", icon: "https://c.animaapp.com/1YWv7WFh/img/icon-2.svg" },
+  { name: "Dashboard", icon: DashboardIcon },
   {
     name: "NFT Marketplace",
-    icon: "https://c.animaapp.com/1YWv7WFh/img/icon-3.svg",
+    icon: NFTIcon,
   },
-  { name: "Tables", icon: "https://c.animaapp.com/1YWv7WFh/img/icon-4.svg" },
-  { name: "Kanban", icon: "https://c.animaapp.com/1YWv7WFh/img/icon-5.svg" },
-  { name: "Profile", icon: "https://c.animaapp.com/1YWv7WFh/img/icon-1.svg" },
-  { name: "Sign In", icon: "https://c.animaapp.com/1YWv7WFh/img/icon.svg" },
+  { name: "Tables", icon: TablesIcon },
+  { name: "Kanban", icon: KanbanIcon },
+  { name: "Profile", icon: ProfileIcon },
+  { name: "Sign In", icon: SignIcon },
 ];
