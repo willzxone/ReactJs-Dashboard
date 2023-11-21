@@ -1,9 +1,14 @@
 import { SideBar } from "./layouts/Sidebar";
+import { Wrapper } from "./components/wrapper";
+import { Header } from "./layouts/Header";
 
 function App() {
   return (
     <>
-      <SideBar />
+      <Wrapper>
+        <SideBar />
+        <Header />
+      </Wrapper>
     </>
   );
 }
