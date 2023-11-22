@@ -1,13 +1,13 @@
 import { SideBar } from "./layouts/Sidebar";
 import { Wrapper } from "./components/wrapper";
-import { Header } from "./layouts/Header";
+import { Dashboard } from "./features/Dashboard";
 
 function App() {
   return (
     <>
       <Wrapper>
         <SideBar />
-        <Header />
+        <Dashboard />
       </Wrapper>
     </>
   );

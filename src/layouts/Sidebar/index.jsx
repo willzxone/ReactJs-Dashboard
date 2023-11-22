@@ -4,7 +4,7 @@ import { useState } from "react";
 export const SideBar = () => {
   const [isActive, setActive] = useState("");
   return (
-    <div className="inline-flex flex-col h-[97vh] w-96 items-start gap-[10px] relative rounded-[0px_0px_20px_0px] overflow-hidden">
+    <div className="inline-flex flex-col h-[97vh] w-1/6 items-start gap-[10px] relative rounded-[0px_0px_20px_0px] overflow-hidden shrink-0">
       <div className="relative h-[97vh] bg-white">
         <div className="absolute w-[259px] h-[316px] top-[168px] left-[31px]">
           {buttonData.map((btn) => {
