@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 export const Card = (props) => {
+  let className = props.className
+    ? `${props.className} flex items-center p-[20px] grow-0`
+    : "flex items-center p-[20px] grow-0";
   return (
-    <div className="flex items-center p-[20px] grow-0">
-      {props.leftIcon && (
-        <div className="w-[56px]">{<img src={props.leftIcon} />}</div>
-      )}
+    <div className={className}>
+      {props.leftIcon && <div className="w-[56px]">{props.leftIcon}</div>}
       <div className="flex flex-col">
         <div className="[font-family:'DM_Sans-Medium',Helvetica] font-medium text-[#a3aed0] text-[14px] tracking-[-0.28px] leading-[24px] whitespace-nowrap">
           {props.heading}
@@ -18,12 +19,8 @@ export const Card = (props) => {
       </div>
       {props.rightIcon && (
         <div className="flex items-center">
-          <div className="w-[50px]">
-            <img src={props.rightIcon} />
-          </div>
-          <div>
-            {props.rightIconSecondary && <img src={props.rightIconSecondary} />}
-          </div>
+          <div className="w-[50px]">{props.rightIcon}</div>
+          <div>{props.rightIconSecondary}</div>
         </div>
       )}
     </div>

@@ -4,18 +4,29 @@ import SpendIcon from "../../assets/Icons/FinancialOverview/spend.svg";
 import ArrowDown from "../../assets/Icons/FinancialOverview/arrow_down.svg";
 import Ellipse from "../../assets/Icons/FinancialOverview/Ellipse.svg";
 import ProjectIcon from "../../assets/Icons/FinancialOverview/projects.svg";
-// import ShadowIcon from "../../assets/Icons/FinancialOverview/Shadow.svg";
 import TaskIcon from "../../assets/Icons/FinancialOverview/tasks1.svg";
 
 export const FinancialOverview = () => {
   return (
-    <div>
-      <div className="mt-[1.8rem] flex items-center ">
-        <Card heading={"Earnings"} value={"$350.4"} leftIcon={EarningIcon} />
+    <div className="flex justify-between">
+      <div className="mt-[1.8rem] flex items-center gap-10">
+        <Card
+          heading={"Earnings"}
+          value={"$350.4"}
+          leftIcon={
+            <>
+              <img src={EarningIcon} />
+            </>
+          }
+        />
         <Card
           heading={"Spend this month"}
           value={"$642.39"}
-          leftIcon={SpendIcon}
+          leftIcon={
+            <>
+              <img src={SpendIcon} />
+            </>
+          }
         />
         <Card
           heading={"Sales"}
@@ -27,14 +38,33 @@ export const FinancialOverview = () => {
           }
         />
       </div>
-      <Card
-        heading={"Your balance"}
-        value={"$1,000"}
-        rightIcon={Ellipse}
-        rightIconSecondary={ArrowDown}
-      />
-      <Card heading={"New Tasks"} value={"154"} leftIcon={TaskIcon} />
-      <Card heading={"Total Projects"} value={"2935"} leftIcon={ProjectIcon} />
+      <div className="mt-[1.8rem] flex items-center gap-10">
+        <Card
+          heading={
+            <>
+              <span className="pr-6">Your balance</span>
+            </>
+          }
+          value={"$1,000"}
+          rightIcon={<img src={Ellipse} />}
+          rightIconSecondary={<img src={ArrowDown} />}
+        />
+        <Card
+          heading={
+            <>
+              <span className="pl-3">New Tasks</span>
+            </>
+          }
+          value={<span className="pl-3">154</span>}
+          leftIcon={<img src={TaskIcon} />}
+        />
+        <Card
+          className={"ml-10"}
+          heading={"Total Projects"}
+          value={"2935"}
+          leftIcon={<img src={ProjectIcon} />}
+        />
+      </div>
     </div>
   );
 };
