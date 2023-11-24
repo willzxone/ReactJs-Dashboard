@@ -33,7 +33,7 @@ const SortableUser = ({ item, isChecked, onCheckboxChange }) => {
         />
         <label
           htmlFor={item}
-          className={`[font-family:'DM_Sans-Bold',Helvetica] text-[18px] cursor-pointer ${
+          className={`[font-family:'DM_Sans-Medium',Helvetica] font-medium text-[16px] tracking-[-0.32px] leading-[28px] whitespace-nowrap cursor-pointer ${
             isChecked ? "text-[#2B3674]" : "text-[#A3AED0]"
           }`}
         >

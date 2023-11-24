@@ -24,7 +24,7 @@ export const FilesChart = () => {
     }
   };
   return (
-    <div className="ml-10 flex flex-col gap-2 grow-0">
+    <div className="flex flex-col gap-2 grow-0 w-1/2">
       <div className="flex justify-between items-center">
         <div className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#2b3674] text-[16px] ">
           Your Pie Chart
