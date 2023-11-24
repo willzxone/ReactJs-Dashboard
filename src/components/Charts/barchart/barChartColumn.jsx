@@ -1,10 +1,16 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
-import { series } from "./barChartSeries";
 import { options } from "./barChartOptions";
 const BarChart = (props) => {
-  const [chartSeries, setChartSeries] = useState(series);
+  const [chartSeries, setChartSeries] = useState([
+    {
+      data: [34, 55, 41, 28, 22, 43, 22, 33, 26],
+    },
+    {
+      data: [23, 23, 20, 28, 43, 27, 40, 35, 26],
+    },
+  ]);
   const [chartOptions, setChartOptions] = useState(options);
 
   useEffect(() => {

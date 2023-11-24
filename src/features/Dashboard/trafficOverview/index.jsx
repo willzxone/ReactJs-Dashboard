@@ -1,5 +1,6 @@
 import { CheckTable } from "./checkTable";
 import DailyTrafficChart from "./dailyTrafficChart";
+import { FilesChart } from "./filesChart";
 
 export const TrafficOverview = () => {
   return (
@@ -7,7 +8,7 @@ export const TrafficOverview = () => {
       <CheckTable />
       <div className="w-1/2 flex">
         <DailyTrafficChart />
-        <DailyTrafficChart />
+        <FilesChart />
       </div>
     </div>
   );

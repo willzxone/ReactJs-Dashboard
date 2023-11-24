@@ -1,0 +1,20 @@
+.legend-label {
+    font-family: 'DM_Sans-Medium', Helvetica;
+    font-size: 12px;
+    color: #a3aed0;
+    margin-top: 22px;
+    margin-right: auto;
+    /* Add other styles as needed */
+  }
+  
+.legend-percentage {
+    font-family: 'DM_Sans-Bold', Helvetica;
+    font-size: 18px;
+    color: #2b3674;
+    font-weight: 600;
+}
+
+.apexcharts-legend {
+    display: flex;
+    justify-content: space-between;
+}

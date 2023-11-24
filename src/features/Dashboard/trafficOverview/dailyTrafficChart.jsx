@@ -48,7 +48,7 @@ const DailyTrafficChart = () => {
           className="ml-10 items-end w-fit"
           value={"2.579"}
           rightIcon={
-            <div className="[font-family:'DM_Sans-Medium',Helvetica] font-medium text-[#a3aed0] text-[14px]">
+            <div className="[font-family:'DM_Sans-Medium',Helvetica] font-medium text-[#a3aed0] text-[14px] pb-[6px]">
               Visitors
             </div>
           }
