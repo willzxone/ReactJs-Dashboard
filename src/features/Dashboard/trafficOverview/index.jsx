@@ -4,9 +4,9 @@ import { FilesChart } from "./filesChart";
 
 export const TrafficOverview = () => {
   return (
-    <div className="flex mt-10 gap-10">
+    <div className="flex mt-10 gap-10 grow-0">
       <CheckTable />
-      <div className="w-1/2 flex">
+      <div className="flex justify-between w-1/2">
         <DailyTrafficChart />
         <FilesChart />
       </div>

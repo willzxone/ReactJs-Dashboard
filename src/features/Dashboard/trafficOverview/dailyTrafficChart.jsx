@@ -45,7 +45,7 @@ const DailyTrafficChart = () => {
       <div className="flex justify-between">
         <Card
           heading={"Daily Traffic"}
-          className="ml-10 items-end w-fit"
+          className="items-end w-fit"
           value={"2.579"}
           rightIcon={
             <div className="[font-family:'DM_Sans-Medium',Helvetica] font-medium text-[#a3aed0] text-[14px] pb-[6px]">

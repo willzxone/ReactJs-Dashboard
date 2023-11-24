@@ -3,7 +3,7 @@ export const ComplexTable = () => {
   return (
     <div className="flex flex-col gap-8 w-1/2">
       <h3 className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#1b2559] text-[24px] tracking-[-0.48px] leading-[24px] whitespace-nowrap">
-        Check Table
+        Complex Table
       </h3>
 
       <table className="table-fixed select-none">
