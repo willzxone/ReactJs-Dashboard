@@ -17,4 +17,5 @@ body {
 ::before,
 ::after {
   border-width: 0;
+  user-select: none;
 }

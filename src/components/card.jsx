@@ -1,8 +1,12 @@
 /* eslint-disable react/prop-types */
 export const Card = (props) => {
   let className = props.className
-    ? `${props.className} flex items-center grow-0`
+    ? `${props.className} flex grow-0`
     : "flex items-center grow-0";
+  let rightIconClassName = props.rightIconClassName
+    ? `${props.rightIconClassName} flex grow-0`
+    : "flex items-center grow-0";
+
   return (
     <div className={className}>
       {props.leftIcon && <div className="w-[56px]">{props.leftIcon}</div>}
@@ -18,7 +22,7 @@ export const Card = (props) => {
         </div>
       </div>
       {props.rightIcon && (
-        <div className="flex items-center">
+        <div className={rightIconClassName}>
           <div className="w-[50px]">{props.rightIcon}</div>
           <div>{props.rightIconSecondary}</div>
         </div>

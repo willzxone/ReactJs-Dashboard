@@ -13,7 +13,7 @@ const LineChart = (props) => {
   const [options, setOptions] = useState(chatOptions);
 
   useEffect(() => {
-    if (props.data !== undefined && props.data !== undefined) {
+    if (props.data !== undefined) {
       const { updatedPoint, max, min } = annotationPoint(props.data, options);
       setOptions({
         ...options,
