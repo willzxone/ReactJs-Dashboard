@@ -1,4 +1,4 @@
-import LineChart from "../../../components/Charts/linechart/lineChart";
+import LineChart from "../../../components/Charts/linechart";
 import CalendarIcon from "../../../assets/Icons/RevenueOverview/calendartoday.svg";
 import ArrowIcon from "../../../assets/Icons/RevenueOverview/arrowdropup.svg";
 import TickIcon from "../../../assets/Icons/RevenueOverview/tick.svg";

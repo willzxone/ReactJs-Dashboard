@@ -6,7 +6,6 @@ import { options } from "./pieChartOptions";
 const PieChart = (props) => {
   const [chartSeries, setChartSeries] = useState([20, 55]);
   const [chartOptions] = useState(options);
-  console.log(props.data);
   useEffect(() => {
     if (props.data !== undefined) {
       setChartSeries(props.data.data);

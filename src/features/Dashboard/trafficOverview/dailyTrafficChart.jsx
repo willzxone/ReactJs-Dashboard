@@ -1,4 +1,4 @@
-import DailyTraffic from "../../../components/Charts/barchart/barchartColumn";
+import DailyTraffic from "../../../components/Charts/barchart";
 import { dailyTrafficData } from "../../../data/dailytraffic/dailyTrafficData";
 import { options } from "../../../components/Charts/barchart/barChartOptions";
 import { Card } from "../../../components/card";

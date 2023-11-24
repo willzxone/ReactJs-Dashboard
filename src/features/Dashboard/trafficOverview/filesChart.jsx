@@ -1,4 +1,4 @@
-import PieChart from "../../../components/Charts/piechart/piechart";
+import PieChart from "../../../components/Charts/piechart";
 import ArrowDown from "../../../assets/Icons/FinancialOverview/arrow_down.svg";
 import { filesData } from "../../../data/files/filesData";
 import { useState } from "react";
