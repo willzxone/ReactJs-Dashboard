@@ -1,6 +1,7 @@
 import { Header } from "../../layouts/Header";
 import { FinancialOverview } from "./financialOverview";
 import { RevenueOverview } from "./revenueOverview";
+import TaskOverview from "./taskOverview";
 import { TrafficOverview } from "./trafficOverview";
 export const Dashboard = () => {
   return (
@@ -9,6 +10,7 @@ export const Dashboard = () => {
       <FinancialOverview />
       <RevenueOverview />
       <TrafficOverview />
+      <TaskOverview />
     </div>
   );
 };

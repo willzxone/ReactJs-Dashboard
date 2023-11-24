@@ -18,6 +18,7 @@ const PieChart = (props) => {
         series={chartSeries}
         type="pie"
         width={380}
+        height={350}
       />
     </div>
   );

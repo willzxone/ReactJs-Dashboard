@@ -63,7 +63,7 @@ const DailyTrafficChart = () => {
       <DailyTraffic
         data={dailyTrafficData}
         options={updatedOptions}
-        height={250}
+        height={300}
       />
     </div>
   );
