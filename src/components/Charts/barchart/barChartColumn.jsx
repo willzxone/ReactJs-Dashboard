@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
 import { options } from "./barChartOptions";
-const BarChart = (props) => {
+const BarChartColumn = (props) => {
   const [chartSeries, setChartSeries] = useState([
     {
       data: [34, 55, 41, 28, 22, 43, 22, 33, 26],
@@ -33,4 +33,4 @@ const BarChart = (props) => {
   );
 };
 
-export default BarChart;
+export default BarChartColumn;

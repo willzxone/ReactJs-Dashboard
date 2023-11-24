@@ -1,5 +1,5 @@
 import barChartIcon from "../../../assets/Icons/RevenueOverview/barchart.svg";
-import BarChart from "../../../components/Charts/barchart/barchartColumn";
+import BarChartColumn from "../../../components/Charts/barchart/barchartColumn";
 
 const BarChartOverView = () => {
   return (
@@ -11,7 +11,7 @@ const BarChartOverView = () => {
         <img src={barChartIcon} className="float-right p-3" />
       </div>
       <div>
-        <BarChart />
+        <BarChartColumn />
       </div>
     </div>
   );
