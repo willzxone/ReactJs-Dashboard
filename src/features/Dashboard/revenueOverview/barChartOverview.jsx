@@ -1,5 +1,5 @@
 import barChartIcon from "../../../assets/Icons/RevenueOverview/barchart.svg";
-import BarChart from "../../../components/Charts/barchart/barchartColumn.jsx";
+import BarChart from "../../../components/Charts/barchart/barchartColumn";
 
 const BarChartOverView = () => {
   return (
