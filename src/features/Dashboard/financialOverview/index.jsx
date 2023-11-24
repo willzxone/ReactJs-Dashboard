@@ -1,10 +1,10 @@
-import { Card } from "../../components/card";
-import EarningIcon from "../../assets/Icons/FinancialOverview/earning.svg";
-import SpendIcon from "../../assets/Icons/FinancialOverview/spend.svg";
-import ArrowDown from "../../assets/Icons/FinancialOverview/arrow_down.svg";
-import Ellipse from "../../assets/Icons/FinancialOverview/Ellipse.svg";
-import ProjectIcon from "../../assets/Icons/FinancialOverview/projects.svg";
-import TaskIcon from "../../assets/Icons/FinancialOverview/tasks1.svg";
+import { Card } from "../../../components/card";
+import EarningIcon from "../../../assets/Icons/FinancialOverview/earning.svg";
+import SpendIcon from "../../../assets/Icons/FinancialOverview/spend.svg";
+import ArrowDown from "../../../assets/Icons/FinancialOverview/arrow_down.svg";
+import Ellipse from "../../../assets/Icons/FinancialOverview/Ellipse.svg";
+import ProjectIcon from "../../../assets/Icons/FinancialOverview/projects.svg";
+import TaskIcon from "../../../assets/Icons/FinancialOverview/tasks1.svg";
 
 export const FinancialOverview = () => {
   return (
