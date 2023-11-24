@@ -6,7 +6,7 @@ import barChartIcon from "../../../assets/Icons/RevenueOverview/barchart.svg";
 import { revenueData } from "../../../data/revenue/revenueData";
 import { Card } from "../../../components/card";
 import { useState } from "react";
-export const LineChartOverView = () => {
+const LineChartOverView = () => {
   const intervals = ["Monthly", "Weekly", "Daily"];
   const [selectedIntervalIndex, setSelectedIntervalIndex] = useState(0);
   const [chartData, setChartData] = useState(revenueData.monthly);
@@ -70,3 +70,5 @@ export const LineChartOverView = () => {
     </div>
   );
 };
+
+export default LineChartOverView;

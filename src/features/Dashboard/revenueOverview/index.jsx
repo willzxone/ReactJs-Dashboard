@@ -1,5 +1,5 @@
-import { BarChartOverView } from "./barChartOverview";
-import { LineChartOverView } from "./lineChartOverview";
+import BarChartOverView from "./barChartOverview";
+import LineChartOverView from "./lineChartOverview";
 
 export const RevenueOverview = () => {
   return (

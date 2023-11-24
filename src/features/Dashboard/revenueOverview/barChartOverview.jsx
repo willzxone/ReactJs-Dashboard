@@ -1,7 +1,7 @@
 import barChartIcon from "../../../assets/Icons/RevenueOverview/barchart.svg";
 import BarChart from "../../../components/Charts/barchart/barchartColumn";
 
-export const BarChartOverView = () => {
+const BarChartOverView = () => {
   return (
     <div className="w-1/2">
       <div className="flex justify-between items-center">
@@ -16,3 +16,5 @@ export const BarChartOverView = () => {
     </div>
   );
 };
+
+export default BarChartOverView;
