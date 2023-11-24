@@ -13,6 +13,7 @@ export const FinancialOverview = () => {
         <Card
           heading={"Earnings"}
           value={"$350.4"}
+          className={"p-[20px]"}
           leftIcon={
             <>
               <img src={EarningIcon} />
@@ -22,6 +23,7 @@ export const FinancialOverview = () => {
         <Card
           heading={"Spend this month"}
           value={"$642.39"}
+          className={"p-[20px]"}
           leftIcon={
             <>
               <img src={SpendIcon} />
@@ -31,6 +33,7 @@ export const FinancialOverview = () => {
         <Card
           heading={"Sales"}
           value={"$574.34"}
+          className={"p-[20px]"}
           description={
             <>
               <span className="text-[#05cd99]">+25% </span>since last month
@@ -40,6 +43,7 @@ export const FinancialOverview = () => {
       </div>
       <div className="mt-[1.8rem] flex items-center gap-10">
         <Card
+          className={"p-[20px]"}
           heading={
             <>
               <span className="pr-6">Your balance</span>
@@ -50,6 +54,7 @@ export const FinancialOverview = () => {
           rightIconSecondary={<img src={ArrowDown} />}
         />
         <Card
+          className={"p-[20px]"}
           heading={
             <>
               <span className="pl-3">New Tasks</span>
