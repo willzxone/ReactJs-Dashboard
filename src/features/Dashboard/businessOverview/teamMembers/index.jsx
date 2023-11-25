@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Card } from "../../../../components/card";
 import { membersData } from "../../../../data/members/membersData";
+import TaskIcon from "../../../../assets/Icons/BusinessOverview/more.svg";
 import NewMember from "./newMembers";
+
 const TeamMembers = () => {
   const [members, setMembers] = useState(membersData);
   const [showModal, setShowModal] = useState(false);
@@ -17,9 +19,12 @@ const TeamMembers = () => {
           onClick={() => setShowModal(true)}
         />
       </div>
-      <ul className="h-[230px] overflow-y-auto mt-8">
+      <ul className="h-[240px] overflow-y-auto mt-8 ">
         {members.map((member, index) => (
-          <li className="mb-6" key={member.name + index}>
+          <li
+            className="mb-6 flex justify-between items-center"
+            key={member.name + index}
+          >
             <Card
               leftIcon={
                 <img
@@ -38,6 +43,7 @@ const TeamMembers = () => {
                 </p>
               }
             />
+            <img src={TaskIcon} />
           </li>
         ))}
       </ul>
