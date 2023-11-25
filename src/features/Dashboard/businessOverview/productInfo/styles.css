@@ -1,0 +1,6 @@
+.custom-background {
+    backdrop-filter: blur(50px) brightness(100%);
+    -webkit-backdrop-filter: blur(50px) brightness(100%);
+    background: linear-gradient(180deg, rgb(88 85 85 / 47%) 0%, rgb(128 128 128) 100%);;
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.47) 0%, rgba(255, 255, 255, 0) 100%); */
+  }
