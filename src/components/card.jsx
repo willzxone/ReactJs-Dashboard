@@ -9,7 +9,11 @@ export const Card = (props) => {
 
   return (
     <div className={className}>
-      {props.leftIcon && <div className="w-[56px]">{props.leftIcon}</div>}
+      {props.leftIcon && (
+        <div className="w-[56px] h-[56px] overflow-hidden rounded-full flex items-center">
+          {props.leftIcon}
+        </div>
+      )}
       <div className="flex flex-col">
         <div className="[font-family:'DM_Sans-Medium',Helvetica] font-medium text-[#a3aed0] text-[14px] tracking-[-0.28px] leading-[24px] whitespace-nowrap">
           {props.heading}
