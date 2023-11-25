@@ -19,20 +19,27 @@ const CalendarComp = () => {
   };
 
   return (
-    <div className="w-1/2 ">
-      <div className="w-[100%]">
-        <DateRange
-          ranges={[selectionRange]}
-          onChange={handleSelect}
-          moveRangeOnFirstSelection={false}
-          editableDateInputs={true}
-          showMonthArrow={false}
-          rangeColors={["#4318FF"]}
-          showDateDisplay={false}
-          calendar={<Calendar date={new Date()} />}
-        />
-        <style>
-          {`
+    <div className="w-1/2 p-4">
+      <DateRange
+        ranges={[selectionRange]}
+        onChange={handleSelect}
+        moveRangeOnFirstSelection={false}
+        editableDateInputs={true}
+        showMonthArrow={false}
+        rangeColors={["#4318FF"]}
+        showDateDisplay={false}
+        className="w-[100%] text-[16px] items-center"
+        calendar={<Calendar date={new Date()} className="w-[100%] " />}
+      />
+      <style>
+        {`
+            .rdrMonthAndYearWrapper{
+              width: 100%
+            }
+            .rdrMonth, .rdrMonths{
+              padding: 0;
+              width: 100%
+            }
             .rdrYearPicker select{
                 color: #2B3674;
             }
@@ -41,7 +48,7 @@ const CalendarComp = () => {
             }
             .rdrMonthPicker, .rdrYearPicker, .rdrMonthAndYearPickers select{
                 font-family: "DM Sans-Bold", Helvetica;
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 700;
                 letter-spacing: -0.28px;
                 line-height: 24px;
@@ -49,7 +56,7 @@ const CalendarComp = () => {
             .rdrWeekDays span{
                 color: #2b3674;
                 font-family: "DM Sans-Bold", Helvetica;
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 700;
                 letter-spacing: -0.28px;
                 line-height: 24px;
@@ -58,7 +65,7 @@ const CalendarComp = () => {
             .rdrDayNumber span{
                 color: #2b3674;
                 font-family: "DM Sans-Medium", Helvetica;
-                font-size: 12px;
+                font-size: 16px;
                 font-weight: 500;
                 letter-spacing: -0.24px;
                 line-height: 20px;
@@ -68,8 +75,7 @@ const CalendarComp = () => {
                 background: #4318FF;
             }
         `}
-        </style>
-      </div>
+      </style>
     </div>
   );
 };

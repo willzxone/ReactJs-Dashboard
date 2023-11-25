@@ -75,7 +75,7 @@ const PendingTasks = () => {
   };
   return (
     <>
-      <div className="w-1/2">
+      <div className="w-1/2 p-4">
         <div className="flex justify-between">
           <div className="flex ">
             <input

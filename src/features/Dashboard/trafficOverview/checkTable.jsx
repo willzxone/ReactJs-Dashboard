@@ -1,11 +1,15 @@
 import { checkTableData } from "../../../data/checktable/checkTableData";
+import MoreIcon from "../../../assets/Icons/TaskOverview/more_horiz.svg";
+
 export const CheckTable = () => {
   return (
     <div className="flex flex-col gap-8 w-1/2">
-      <h3 className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#1b2559] text-[24px] tracking-[-0.48px] leading-[24px] whitespace-nowrap">
-        Check Table
-      </h3>
-
+      <div className="flex justify-between">
+        <h3 className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#1b2559] text-[24px] tracking-[-0.48px] leading-[24px] whitespace-nowrap">
+          Check Table
+        </h3>
+        <img src={MoreIcon} />
+      </div>
       <table className="table-fixed select-none">
         <thead className="text-left">
           <tr className="[font-family:'DM_Sans-Medium',Helvetica] text-[#a3aed0] text-[14px]">

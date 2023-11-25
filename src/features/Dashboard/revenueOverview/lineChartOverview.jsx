@@ -64,7 +64,7 @@ const LineChartOverView = () => {
         </div>
       </div>
       <div className="w-3/4">
-        <img src={barChartIcon} className="float-right p-3" />
+        <img src={barChartIcon} className="float-right" />
         <LineChart data={chartData} height={200} width={"100%"} />
       </div>
     </div>

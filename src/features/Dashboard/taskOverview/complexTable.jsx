@@ -1,10 +1,15 @@
 import { complexTableData } from "../../../data/complextable/complexTableData";
+import MoreIcon from "../../../assets/Icons/TaskOverview/more_horiz.svg";
+
 export const ComplexTable = () => {
   return (
     <div className="flex flex-col gap-8 w-1/2">
-      <h3 className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#1b2559] text-[24px] tracking-[-0.48px] leading-[24px] whitespace-nowrap">
-        Complex Table
-      </h3>
+      <div className="flex justify-between">
+        <h3 className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#1b2559] text-[24px] tracking-[-0.48px] leading-[24px] whitespace-nowrap">
+          Complex Table
+        </h3>
+        <img src={MoreIcon} />
+      </div>
 
       <table className="table-fixed select-none">
         <thead className="text-left">

@@ -13,7 +13,7 @@ export const FinancialOverview = () => {
         <Card
           heading={"Earnings"}
           value={"$350.4"}
-          className={"p-[20px] items-center"}
+          className={"p-[20px] items-center mr-16"}
           leftIcon={
             <>
               <img src={EarningIcon} />
