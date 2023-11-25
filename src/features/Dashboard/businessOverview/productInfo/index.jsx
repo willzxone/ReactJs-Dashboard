@@ -2,7 +2,7 @@ import { Card } from "../../../../components/card";
 import StarbucksIcon from "../../../../assets/Icons/BusinessOverview/starbucks.svg";
 import WatchIcon from "../../../../assets/Icons/BusinessOverview/watch_later.svg";
 import FoodIcom from "../../../../assets/Icons/BusinessOverview/fastfood.svg";
-import StarbuckImage from "../../../../assets/Images/image.png";
+import StarbuckImage from "../../../../assets/Images/Image.png";
 
 const ProductInfo = () => {
   return (
