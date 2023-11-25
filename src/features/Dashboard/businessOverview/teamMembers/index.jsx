@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card } from "../../../../components/card";
 import { membersData } from "../../../../data/members/membersData";
 import TaskIcon from "../../../../assets/Icons/BusinessOverview/more.svg";
+import PlusIcon from "../../../../assets/Icons/BusinessOverview/add_circle.svg";
 import NewMember from "./newMembers";
 
 const TeamMembers = () => {
@@ -14,7 +15,7 @@ const TeamMembers = () => {
           Team members
         </p>
         <img
-          src={"/src/assets/Icons/BusinessOverview/add_circle.svg"}
+          src={PlusIcon}
           className="cursor-pointer"
           onClick={() => setShowModal(true)}
         />

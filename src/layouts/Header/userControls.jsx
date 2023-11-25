@@ -2,6 +2,7 @@ import SearchIcon from "../../assets/Icons/UserControl/SearchIcon.svg";
 import InfoIcon from "../../assets/Icons/UserControl/info.svg";
 import MoonIcon from "../../assets/Icons/UserControl/moon.svg";
 import NotificationIcon from "../../assets/Icons/UserControl/notification.svg";
+import UserProfilePic from "../../assets/Images/UserControl/userprofile.png";
 export const UserControls = () => {
   return (
     <aside className="flex justify-center items-center gap-5 cursor-pointer">
@@ -19,7 +20,7 @@ export const UserControls = () => {
         <img src={NotificationIcon} alt="notificationicon" />
       </div>
       <img
-        src="/src/assets/Images/UserControl/userprofile.png"
+        src={UserProfilePic}
         alt="userprofile"
         className="h-8 w-8 rounded-full object-cover"
       />
