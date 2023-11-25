@@ -6,7 +6,7 @@ import { TrafficOverview } from "./trafficOverview";
 import BusinessOverview from "./businessOverview";
 export const Dashboard = () => {
   return (
-    <div className="flex flex-col w-[85%] grow-0">
+    <div className="flex flex-col w-[85%] grow-0 dark:bg-[#1B254B] px-10">
       <Header />
       <FinancialOverview />
       <RevenueOverview />

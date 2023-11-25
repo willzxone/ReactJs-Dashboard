@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import Modal from "./modal";
-
+import CrossIcon from "../../../../assets/Icons/BusinessOverview/cross.svg";
 const initialFormData = {
   name: "",
   position: "",
@@ -30,7 +30,7 @@ const NewMember = ({ showModal, setShowModal, setMembers, members }) => {
       <Modal showModal={showModal}>
         <img
           className="background-transparent font-bold text-sm outline-none focus:outline-none self-end p-4 cursor-pointer w-12"
-          src="/src/assets/Icons/BusinessOverview/cross.svg"
+          src={CrossIcon}
           onClick={() => setShowModal(false)}
         />
 

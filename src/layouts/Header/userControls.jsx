@@ -1,13 +1,15 @@
+/* eslint-disable react/prop-types */
 import SearchIcon from "../../assets/Icons/UserControl/SearchIcon.svg";
 import InfoIcon from "../../assets/Icons/UserControl/info.svg";
 import MoonIcon from "../../assets/Icons/UserControl/moon.svg";
 import NotificationIcon from "../../assets/Icons/UserControl/notification.svg";
 import UserProfilePic from "../../assets/Images/UserControl/userprofile.png";
-export const UserControls = () => {
+export const UserControls = ({ handleThemeSwitch }) => {
   return (
     <aside className="flex justify-center items-center gap-5 cursor-pointer">
       <div className="flex justify-center gap-1">
         <img src={SearchIcon} alt="searchicon" />
+        <SearchIcon />
         <input
           type="text"
           placeholder="Search"
@@ -16,7 +18,7 @@ export const UserControls = () => {
       </div>
       <div className="flex justify-center gap-5">
         <img src={InfoIcon} alt="infoicon" />
-        <img src={MoonIcon} alt="moonicon" />
+        <img src={MoonIcon} alt="moonicon" onClick={handleThemeSwitch} />
         <img src={NotificationIcon} alt="notificationicon" />
       </div>
       <img
