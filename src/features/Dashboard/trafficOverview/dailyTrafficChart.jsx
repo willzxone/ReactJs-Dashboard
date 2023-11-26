@@ -25,7 +25,7 @@ const DailyTrafficChart = () => {
     },
     plotOptions: {
       bar: {
-        columnWidth: "20%",
+        columnWidth: "30%",
         horizontal: false,
         borderRadius: 5,
       },

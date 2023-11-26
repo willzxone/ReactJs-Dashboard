@@ -11,8 +11,16 @@ export const chatOptions = {
   stroke: {
     curve: "smooth",
   },
-
+  grid: {
+    show: false,
+  },
   xaxis: {
+    axisBorder: {
+      show: false, // Set to false to hide the line above x-axis categories
+    },
+    axisTicks: {
+      show: false, // Set to false to hide the ticks along the x-axis
+    },
     labels: {
       style: {
         colors: "#a3aed0",

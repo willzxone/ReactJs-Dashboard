@@ -61,7 +61,7 @@ const LineChartOverView = () => {
         </div>
       </div>
       <div className="w-3/4">
-        <BarChartIcon className="float-right dark:p-2 dark:w-10 dark:h-10 dark:text-white text-[#4318FF]" />
+        <BarChartIcon className=" dark:text-white text-[#4318FF] w-[24px] h-[24px] float-right dark:p-2 dark:w-10 dark:h-10" />
         <LineChart data={chartData} height={200} width={"100%"} />
       </div>
     </div>
