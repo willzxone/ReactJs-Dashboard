@@ -1,6 +1,6 @@
 import CalendarComp from "./calendar";
 import { ComplexTable } from "./complexTable";
-import PendingTasks from "./pendingTasks";
+import PendingTasks from "./PendingTasks";
 
 const TaskOverview = () => {
   return (
