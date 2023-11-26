@@ -1,5 +1,5 @@
 import { Labels } from "./labels";
-import { UserControls } from "./userControls";
+import UserControls from "./UserControls";
 import { useState, useEffect } from "react";
 export const Header = () => {
   // const [theme, setTheme] = useState(null);

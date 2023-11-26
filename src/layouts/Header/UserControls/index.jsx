@@ -6,7 +6,7 @@ import NotificationIcon from "../../../assets/Icons/UserControl/notification.svg
 import UserProfilePic from "../../../assets/Images/UserControl/userprofile.png";
 import ProfileCard from "./profileCard";
 import { useState } from "react";
-export const UserControls = ({ handleThemeSwitch }) => {
+const UserControls = ({ handleThemeSwitch }) => {
   const [isProfileCardVisible, setProfileCardVisibility] = useState(false);
 
   return (
@@ -41,3 +41,5 @@ export const UserControls = ({ handleThemeSwitch }) => {
     </aside>
   );
 };
+
+export default UserControls;
