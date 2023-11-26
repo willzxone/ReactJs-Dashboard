@@ -1,10 +1,14 @@
 /* eslint-disable react/prop-types */
-import SearchIcon from "../../assets/Icons/UserControl/SearchIcon.svg?react";
-import InfoIcon from "../../assets/Icons/UserControl/info.svg?react";
-import MoonIcon from "../../assets/Icons/UserControl/moon.svg?react";
-import NotificationIcon from "../../assets/Icons/UserControl/notification.svg?react";
-import UserProfilePic from "../../assets/Images/UserControl/userprofile.png";
+import SearchIcon from "../../../assets/Icons/UserControl/SearchIcon.svg?react";
+import InfoIcon from "../../../assets/Icons/UserControl/info.svg?react";
+import MoonIcon from "../../../assets/Icons/UserControl/moon.svg?react";
+import NotificationIcon from "../../../assets/Icons/UserControl/notification.svg?react";
+import UserProfilePic from "../../../assets/Images/UserControl/userprofile.png";
+import ProfileCard from "./profileCard";
+import { useState } from "react";
 export const UserControls = ({ handleThemeSwitch }) => {
+  const [isProfileCardVisible, setProfileCardVisibility] = useState(false);
+
   return (
     <aside className="flex justify-center items-center gap-5 cursor-pointer dark:bg-[#111C44] p-3 rounded-full">
       <div className="flex justify-center items-center gap-1 dark:bg-[#0B1437] p-2 rounded-3xl">
@@ -25,11 +29,15 @@ export const UserControls = ({ handleThemeSwitch }) => {
         />
         <NotificationIcon className="hover:text-[#4318FF]" />
       </div>
-      <img
-        src={UserProfilePic}
-        alt="userprofile"
-        className="h-8 w-8 rounded-full object-cover"
-      />
+      <div className="relative">
+        <img
+          src={UserProfilePic}
+          alt="userprofile"
+          className="h-8 w-8 rounded-full object-cover cursor-pointer"
+          onClick={() => setProfileCardVisibility(!isProfileCardVisible)}
+        />
+        <ProfileCard visible={isProfileCardVisible} />
+      </div>
     </aside>
   );
 };
