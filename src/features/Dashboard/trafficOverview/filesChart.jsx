@@ -1,5 +1,5 @@
 import PieChart from "../../../components/Charts/piechart";
-import ArrowDown from "../../../assets/Icons/FinancialOverview/arrow_down.svg";
+import ArrowDown from "../../../assets/Icons/FinancialOverview/arrow_down.svg?react";
 import { filesData } from "../../../data/files/filesData";
 import { useState } from "react";
 
@@ -24,9 +24,9 @@ export const FilesChart = () => {
     }
   };
   return (
-    <div className="flex flex-col gap-2 grow-0 w-1/2">
+    <div className="flex flex-col gap-2 grow-0 w-1/2 dark:bg-[#111C44] dark:p-6 dark:rounded-3xl ">
       <div className="flex justify-between items-center">
-        <div className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#2b3674] text-[16px] ">
+        <div className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#2b3674] text-[16px] dark:text-white">
           Your Pie Chart
         </div>
         <div
@@ -34,7 +34,7 @@ export const FilesChart = () => {
           onClick={handleIntervalChange}
         >
           <p className="inline">{intervals[selectedIntervalIndex]}</p>
-          <img className="inline" src={ArrowDown} />
+          <ArrowDown className="inline" />
         </div>
       </div>
       <PieChart data={chartData} />

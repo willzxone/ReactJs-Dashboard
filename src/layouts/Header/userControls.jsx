@@ -14,7 +14,7 @@ export const UserControls = ({ handleThemeSwitch }) => {
         <input
           type="text"
           placeholder="Search"
-          className="focus:border-none placeholder:font-normal dark:bg-[#0B1437] dark:placeholder:text-[#FFFFFF]  placeholder:text-[#8e9ab9] placeholder:[font-family:'DM_Sans-Regular',Helvetica] [font-family:'DM_Sans-Regular',Helvetica] font-normal text-[#8e9ab9] text-[14px] tracking-[-0.28px] leading-[20px] border-none rounded-md outline-none"
+          className="focus:border-none placeholder:font-normal dark:bg-[#0B1437] dark:placeholder:text-[#FFFFFF]  placeholder:text-[#8e9ab9] placeholder:[font-family:'DM_Sans-Regular',Helvetica] [font-family:'DM_Sans-Regular',Helvetica] font-normal text-[#8e9ab9] text-[14px] tracking-[0.28px] leading-[20px] border-none rounded-md outline-none"
         />
       </div>
       <div className="flex justify-center gap-5 items-center text-[#A3AED0] dark:text-white ">

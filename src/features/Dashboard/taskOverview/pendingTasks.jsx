@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import MoreIcon from "../../../assets/Icons/TaskOverview/more_horiz.svg";
+import MoreIcon from "../../../assets/Icons/TaskOverview/more_horiz.svg?react";
 import DragIcon from "../../../assets/Icons/TaskOverview/drag_indicator.svg";
 import { useState } from "react";
 import { tasksData } from "../../../data/tasks/tasksData";
@@ -21,21 +21,23 @@ const SortableUser = ({ item, isChecked, onCheckboxChange }) => {
   };
 
   return (
-    <li className="pb-7 flex justify-between items-center " style={style}>
+    <li className="pb-7 flex justify-between items-center" style={style}>
       <div>
         <input
           type="checkbox"
           name={item}
           id={item}
-          className="cursor-pointer accent-[#4318FF] ring-white border-[#A3AED0] outline-cyan-50 mr-4"
+          className="cursor-pointer accent-[#4318FF] ring-white border-[#A3AED0] outline-cyan-50 mr-4 "
           checked={isChecked}
           onChange={() => onCheckboxChange(item)}
         />
         <label
           htmlFor={item}
-          className={`[font-family:'DM_Sans-Medium',Helvetica] font-medium text-[16px] tracking-[-0.32px] leading-[28px] whitespace-nowrap cursor-pointer ${
-            isChecked ? "text-[#2B3674]" : "text-[#A3AED0]"
-          }`}
+          className={`[font-family:'DM_Sans-Medium',Helvetica] text-[16px] tracking-[0.32px] leading-[28px] whitespace-nowrap cursor-pointer ${
+            isChecked
+              ? "text-[#2B3674] dark:text-white dark:font-bold"
+              : "text-[#A3AED0] dark:text-white"
+          } `}
         >
           {item}
         </label>
@@ -75,9 +77,9 @@ const PendingTasks = () => {
   };
   return (
     <>
-      <div className="w-1/2 p-4">
+      <div className="w-1/2 p-4 dark:bg-[#111C44] dark:p-6 dark:rounded-3xl">
         <div className="flex justify-between">
-          <div className="flex ">
+          <div className="flex items-center">
             <input
               type="checkbox"
               id="Tasks"
@@ -90,7 +92,7 @@ const PendingTasks = () => {
               Tasks
             </label>
           </div>
-          <img src={MoreIcon} />
+          <MoreIcon className="text-[#4318FF] dark:text-white" />
         </div>
         <ul className="mt-9 cursor-pointer">
           <DndContext collisionDetection={closestCenter} onDragEnd={onDragEnd}>

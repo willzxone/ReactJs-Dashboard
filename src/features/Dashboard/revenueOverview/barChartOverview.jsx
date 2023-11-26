@@ -3,7 +3,7 @@ import BarChartColumn from "../../../components/Charts/barchart";
 
 const BarChartOverView = () => {
   return (
-    <div className="w-1/2">
+    <div className="w-1/2 dark:bg-[#111C44] dark:p-6 dark:rounded-3xl">
       <div className="flex justify-between items-center">
         <h3 className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#1b2559] text-[24px] dark:text-white">
           Weekly Revenue

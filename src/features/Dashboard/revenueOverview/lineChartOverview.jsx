@@ -28,8 +28,8 @@ const LineChartOverView = () => {
   };
 
   return (
-    <div className="flex w-1/2">
-      <div className="w-1/4 flex flex-col [font-family:'DM_Sans-Medium',Helvetica] font-medium text-[#a3aed0] text-[14px] tracking-[-0.32px] leading-[28px] whitespace-nowrap">
+    <div className="flex w-1/2 dark:bg-[#111C44] dark:p-6 dark:rounded-3xl">
+      <div className="w-1/4 flex flex-col [font-family:'DM_Sans-Medium',Helvetica] font-medium text-[#a3aed0] text-[14px] tracking-[0.32px] leading-[28px] whitespace-nowrap">
         <div
           className="flex gap-2 items-center p-2 cursor-pointer hover:text-[#4318FF] hover:font-semibold select-none dark:bg-[#1B254B] dark:px-4 w-fit rounded-lg"
           onClick={handleIntervalChange}

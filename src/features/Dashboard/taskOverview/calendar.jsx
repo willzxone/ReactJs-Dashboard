@@ -19,7 +19,7 @@ const CalendarComp = () => {
   };
 
   return (
-    <div className="w-1/2 p-4">
+    <div className="w-1/2 p-4 dark:bg-[#111C44] dark:p-6 dark:rounded-3xl">
       <DateRange
         ranges={[selectionRange]}
         onChange={handleSelect}
@@ -33,6 +33,22 @@ const CalendarComp = () => {
       />
       <style>
         {`
+
+            
+            .dark .rdrCalendarWrapper{
+              background-color: #111C44; 
+            }
+
+            .dark .rdrYearPicker select,.dark .rdrMonthPicker select{
+              color: white;
+              background-color: #1B254B;
+              border-radius: 9999px;
+            }
+            
+            .light .rdrCalendarWrapper {
+              background-color: #FFFFFF;  /* Light mode background color */
+            }
+           
             .rdrMonthAndYearWrapper{
               width: 100%
             }
@@ -53,6 +69,14 @@ const CalendarComp = () => {
                 letter-spacing: -0.28px;
                 line-height: 24px;
             }
+
+            .dark .rdrWeekDays span{
+              color: white;
+            }
+            .dark .rdrDayNumber span{
+              color: white;
+            }
+
             .rdrWeekDays span{
                 color: #2b3674;
                 font-family: "DM Sans-Bold", Helvetica;

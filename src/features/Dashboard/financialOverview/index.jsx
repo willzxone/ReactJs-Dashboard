@@ -38,7 +38,7 @@ export const FinancialOverview = () => {
           heading={"Sales"}
           value={<p className="dark:text-white">$574.34</p>}
           className={
-            "p-[20px] items-center dark:py-2 dark:pl-6 dark:pr-20 dark:bg-[#111C44] rounded-3xl"
+            "p-[20px] items-center dark:py-2 dark:pl-6 dark:pr-16 dark:bg-[#111C44] rounded-3xl"
           }
           description={
             <>
@@ -50,7 +50,7 @@ export const FinancialOverview = () => {
       <div className="mt-[1.8rem] flex items-center dark:gap-3 gap-10">
         <Card
           className={
-            "p-[20px] items-center dark:py-4 dark:pl-8 dark:pr-16 dark:mr-0 dark:bg-[#111C44] rounded-3xl"
+            "p-[20px] items-center dark:py-4 dark:pl-8 dark:pr-10 dark:mr-0 dark:bg-[#111C44] rounded-3xl"
           }
           heading={
             <>

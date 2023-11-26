@@ -23,15 +23,19 @@ export const SideBar = () => {
                 <div
                   className={`h-[36px] cursor-pointer flex items-center my-2`}
                 >
-                  <img
-                    className="w-[24px] h-[24px]  "
-                    alt="Icon"
-                    src={btn.icon}
+                  <btn.icon
+                    className={`w-[24px] h-[24px] ${
+                      isActive === btn.name
+                        ? "text-[#2b3674] dark:text-white"
+                        : "text-[#a3aed0]  dark:text-white"
+                    }`}
                   />
                   <div
-                    className={`font-medium text-[${
-                      isActive === btn.name ? "#2b3674" : "#a3aed0"
-                    }] [font-family:'DM_Sans',Helvetica] text-[16px] tracking-[-0.32px] leading-[30px] whitespace-nowrap ml-3 dark:text-[#FFFFFF]`}
+                    className={`font-medium ${
+                      isActive === btn.name
+                        ? "text-[#2b3674] dark:text-white"
+                        : "text-[#a3aed0]  dark:text-white"
+                    } [font-family:'DM_Sans',Helvetica] text-[16px] tracking-[0.32px] leading-[30px] whitespace-nowrap ml-3 `}
                   >
                     {btn.name}
                   </div>

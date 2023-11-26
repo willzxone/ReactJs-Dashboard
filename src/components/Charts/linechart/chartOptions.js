@@ -11,6 +11,7 @@ export const chatOptions = {
   stroke: {
     curve: "smooth",
   },
+
   xaxis: {
     labels: {
       style: {

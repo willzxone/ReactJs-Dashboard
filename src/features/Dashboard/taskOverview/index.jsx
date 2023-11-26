@@ -6,7 +6,7 @@ const TaskOverview = () => {
   return (
     <div className="mt-10 flex gap-10 ">
       <ComplexTable />
-      <div className="flex justify-center w-1/2">
+      <div className="flex justify-center w-1/2 gap-10">
         <PendingTasks />
         <CalendarComp />
       </div>

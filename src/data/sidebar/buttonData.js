@@ -1,9 +1,9 @@
-import DashboardIcon from "../../assets/Icons/Sidebar/Icon-5.svg";
-import NFTIcon from "../../assets/Icons/Sidebar/Icon-4.svg";
-import TablesIcon from "../../assets/Icons/Sidebar/Icon-3.svg";
-import KanbanIcon from "../../assets/Icons/Sidebar/Icon-2.svg";
-import ProfileIcon from "../../assets/Icons/Sidebar/Icon-1.svg";
-import SignIcon from "../../assets/Icons/Sidebar/Icon.svg";
+import DashboardIcon from "../../assets/Icons/Sidebar/Icon-5.svg?react";
+import NFTIcon from "../../assets/Icons/Sidebar/Icon-4.svg?react";
+import TablesIcon from "../../assets/Icons/Sidebar/Icon-3.svg?react";
+import KanbanIcon from "../../assets/Icons/Sidebar/Icon-2.svg?react";
+import ProfileIcon from "../../assets/Icons/Sidebar/Icon-1.svg?react";
+import SignIcon from "../../assets/Icons/Sidebar/Icon.svg?react";
 
 export const buttonData = [
   { name: "Dashboard", icon: DashboardIcon },

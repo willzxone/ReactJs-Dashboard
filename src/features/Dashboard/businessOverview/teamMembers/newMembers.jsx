@@ -36,9 +36,9 @@ const NewMember = ({ showModal, setShowModal, setMembers, members }) => {
 
         <form
           onSubmit={handleSubmit}
-          className="text-left w-100 p-10 pt-0 text-[#4318FF] [font-family:'DM_Sans-Bold',Helvetica]  text-[16px] tracking-[0.32px] leading-[28px] whitespace-nowrap"
+          className="text-left w-100 p-10 pt-0 text-[#4318FF] [font-family:'DM_Sans-Bold',Helvetica]  text-[16px] tracking-[0.32px] leading-[28px] whitespace-nowrap "
         >
-          <div className="mb-4 ">
+          <div className="mb-4 dark:text-white">
             <label htmlFor="name" className="block mb-2">
               Name
             </label>
@@ -52,8 +52,8 @@ const NewMember = ({ showModal, setShowModal, setMembers, members }) => {
               required
             />
           </div>
-          <div className="mb-4">
-            <label htmlFor="position" className="block  mb-2">
+          <div className="mb-4 dark:text-white">
+            <label htmlFor="position" className="block mb-2">
               Position
             </label>
             <input
@@ -67,7 +67,10 @@ const NewMember = ({ showModal, setShowModal, setMembers, members }) => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="profileImage" className="block  mb-2">
+            <label
+              htmlFor="profileImage"
+              className="block  mb-2 dark:text-white"
+            >
               Profile Image URL
             </label>
             <input
