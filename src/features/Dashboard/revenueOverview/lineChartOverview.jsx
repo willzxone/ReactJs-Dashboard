@@ -28,18 +28,18 @@ const LineChartOverView = () => {
   };
 
   return (
-    <div className="flex w-1/2 dark:bg-[#111C44] dark:p-6 dark:rounded-3xl">
-      <div className="w-1/4 flex flex-col [font-family:'DM_Sans-Medium',Helvetica] font-medium text-[#a3aed0] text-[14px] tracking-[0.32px] leading-[28px] whitespace-nowrap">
+    <div className="flex w-1/2 bg-card dark:p-6 dark:rounded-3xl">
+      <div className="w-1/4 flex flex-col font-medium text-secondary text-[14px] tracking-[0.32px] leading-[28px] whitespace-nowrap">
         <div
-          className="flex gap-2 items-center p-2 cursor-pointer hover:text-[#4318FF] hover:font-semibold select-none dark:bg-[#1B254B] dark:px-4 w-fit rounded-lg"
+          className="flex gap-2 items-center p-2 cursor-pointer hover:text-primary hover:font-semibold select-none bg-cardBackground dark:px-4 w-fit rounded-lg"
           onClick={handleIntervalChange}
         >
-          <CalendarIcon alt="calendaricon" className="dark:text-white" />
+          <CalendarIcon alt="calendaricon" />
           <p className="dark:text-white">{intervals[selectedIntervalIndex]}</p>
         </div>
 
         <Card
-          value={<p className="text-[34px] pb-2 dark:text-white">$37.5K</p>}
+          value={<p className="text-[34px] pb-2">$37.5K</p>}
           className="mt-[28px]"
           description={
             <>
@@ -61,7 +61,7 @@ const LineChartOverView = () => {
         </div>
       </div>
       <div className="w-3/4">
-        <BarChartIcon className=" dark:text-white text-[#4318FF] w-[24px] h-[24px] float-right dark:p-2 dark:w-10 dark:h-10" />
+        <BarChartIcon className=" text-primary w-[24px] h-[24px] float-right dark:p-2 dark:w-10 dark:h-10" />
         <LineChart data={chartData} height={200} width={"100%"} />
       </div>
     </div>

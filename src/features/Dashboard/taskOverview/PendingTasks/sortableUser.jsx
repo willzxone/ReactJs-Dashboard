@@ -18,16 +18,14 @@ const SortableUser = ({ item, isChecked, onCheckboxChange }) => {
           type="checkbox"
           name={item}
           id={item}
-          className="cursor-pointer accent-[#4318FF] ring-white border-[#A3AED0] outline-cyan-50 mr-4 "
+          className="cursor-pointer accent-primary ring-white border-secondary outline-cyan-50 mr-4 "
           checked={isChecked}
           onChange={() => onCheckboxChange(item)}
         />
         <label
           htmlFor={item}
-          className={`[font-family:'DM_Sans-Medium',Helvetica] text-[16px] tracking-[0.48px] leading-[28px] whitespace-nowrap cursor-pointer ${
-            isChecked
-              ? "text-[#2B3674] dark:text-white dark:font-bold"
-              : "text-[#A3AED0] dark:text-white"
+          className={`text-[16px] tracking-[0.48px] leading-[28px] whitespace-nowrap cursor-pointer ${
+            isChecked ? "text-primary dark:font-bold" : "text-secondary "
           } `}
         >
           {item}

@@ -24,13 +24,11 @@ export const FilesChart = () => {
     }
   };
   return (
-    <div className="flex flex-col gap-2 grow-0 w-1/2 dark:bg-[#111C44] dark:p-6 dark:rounded-3xl ">
+    <div className="flex flex-col gap-2 grow-0 w-1/2 bg-card dark:p-6 dark:rounded-3xl ">
       <div className="flex justify-between items-center">
-        <div className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#2b3674] text-[16px] dark:text-white">
-          Your Pie Chart
-        </div>
+        <div className="font-bold text-primary text-[16px]">Your Pie Chart</div>
         <div
-          className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#a3aed0] text-[12px] cursor-pointer hover:text-[#2b3674]"
+          className="font-bold text-secondary text-[12px] cursor-pointer hover:text-primary"
           onClick={handleIntervalChange}
         >
           <p className="inline">{intervals[selectedIntervalIndex]}</p>

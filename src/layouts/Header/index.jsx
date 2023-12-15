@@ -2,16 +2,6 @@ import { Labels } from "./labels";
 import UserControls from "./UserControls";
 import { useState, useEffect } from "react";
 export const Header = () => {
-  // const [theme, setTheme] = useState(null);
-
-  // useEffect(() => {
-  //   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-  //     setTheme("dark");
-  //   } else {
-  //     setTheme("light");
-  //   }
-  // }, []);
-
   const [theme, setTheme] = useState(
     window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
   );

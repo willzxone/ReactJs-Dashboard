@@ -5,7 +5,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        "secondarygrey-300": "var(--secondarygrey-300)",
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        dark: "var(--color-primary-dark)",
+        background: "var(--color-bg)",
+        card: "var(--color-card)",
+        cardBackground: "var(--color-card-bg)",
       },
     },
   },

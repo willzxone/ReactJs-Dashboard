@@ -19,7 +19,7 @@ const CalendarComp = () => {
   };
 
   return (
-    <div className="w-1/2 p-4 dark:bg-[#111C44] dark:p-6 dark:rounded-3xl">
+    <div className="w-1/2 p-4 bg-card dark:p-6 dark:rounded-3xl">
       <DateRange
         ranges={[selectionRange]}
         onChange={handleSelect}

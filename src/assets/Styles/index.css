@@ -1,12 +1,3 @@
-/* @tailwind components;
-@tailwind utilities;
-
-@layer components {
-    .all-\[unset\] {
-      all: unset;
-    }
-  } */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,4 +9,27 @@ body {
 ::after {
   border-width: 0;
   user-select: none;
+}
+
+@layer base{
+  :root[class="light"] {
+    --color-primary: #2B3674;
+    --color-secondary: #A3AED0;
+    --color-primary-dark: #4318FF;
+    --color-background:#F4F7FE;
+    --color-card:#F4F7FE;
+    --color-card-bg:#F4F7FE;
+    background-color: #F4F7FE;
+    font-family:'DM_Sans-Medium','Helvetica'
+  }
+  :root[class="dark"] {
+  --color-primary: #FFFFFF;
+  --color-secondary: #A3AED0;
+  --color-primary-dark: #4318FF;
+  --color-background:#0b1437;
+  --color-card:#111C44;
+  --color-card-bg:#1B254B;
+  background-color: #0b1437;
+  font-family:'DM_Sans-Medium','Helvetica'
+  }
 }

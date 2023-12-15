@@ -40,7 +40,7 @@ const PendingTasks = () => {
   };
   return (
     <>
-      <div className="w-1/2 p-4 dark:bg-[#111C44] dark:p-6 dark:rounded-3xl">
+      <div className="w-1/2 p-4 bg-card dark:p-6 dark:rounded-3xl">
         <Header />
         <ul className="mt-9 cursor-pointer">
           <DndContext collisionDetection={closestCenter} onDragEnd={onDragEnd}>

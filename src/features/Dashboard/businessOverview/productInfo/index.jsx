@@ -6,7 +6,7 @@ import StarbuckImage from "../../../../assets/Images/BusinessOverview/Image.png"
 
 const ProductInfo = () => {
   return (
-    <div className="w-1/4 relative dark:bg-[#111C44] dark:p-6 dark:rounded-3xl">
+    <div className="w-1/4 relative bg-card dark:p-6 dark:rounded-3xl">
       <div className="relative w-full h-[185px] overflow-hidden">
         <div className="relative rounded-2xl overflow-hidden h-[185px]">
           {/* Image */}
@@ -27,14 +27,14 @@ const ProductInfo = () => {
         className="flex-col absolute bottom-[0%] left-3 z-20 dark:left-10 dark:bottom-[6%]"
         leftIcon={<img src={StarbucksIcon} />}
         heading={
-          <p className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#2b3674] text-[24px] tracking-[0.48px] leading-[32px] mt-6 dark:text-white">
+          <p className="font-bold text-primary text-[24px] tracking-[0.48px] leading-[32px] mt-6">
             Starbucks
           </p>
         }
         value={
           <>
             <img src={FoodIcom} className="inline mr-2" />
-            <p className="[font-family:'DM_Sans-Medium',Helvetica] font-medium text-[#a3aed0] text-[14px] tracking-[0.28px] leading-[24px] whitespace-nowrap inline">
+            <p className="font-medium text-[#a3aed0] text-[14px] tracking-[0.28px] leading-[24px] whitespace-nowrap inline">
               10% cashback & off
             </p>
           </>

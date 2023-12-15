@@ -3,12 +3,10 @@ import BarChartColumn from "../../../components/Charts/barchart";
 
 const BarChartOverView = () => {
   return (
-    <div className="w-1/2 dark:bg-[#111C44] dark:p-6 dark:rounded-3xl">
+    <div className="w-1/2 bg-card dark:p-6 dark:rounded-3xl">
       <div className="flex justify-between items-center">
-        <h3 className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#1b2559] text-[24px] dark:text-white">
-          Weekly Revenue
-        </h3>
-        <BarChartIcon className="float-right dark:p-2 dark:w-10 dark:h-10 text-[#1b2559] dark:text-white" />
+        <h3 className="font-bold text-primary text-[24px]">Weekly Revenue</h3>
+        <BarChartIcon className="float-right dark:p-2 dark:w-10 dark:h-10 text-primary" />
       </div>
       <div>
         <BarChartColumn />

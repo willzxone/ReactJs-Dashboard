@@ -41,21 +41,21 @@ const DailyTrafficChart = () => {
   };
 
   return (
-    <div className="w-1/2 dark:bg-[#111C44] dark:p-6 dark:rounded-3xl ">
+    <div className="w-1/2 bg-card dark:p-6 dark:rounded-3xl ">
       <div className="flex justify-between ">
         <Card
           heading={"Daily Traffic"}
           className="items-end w-fit "
-          value={<p className="dark:text-white">2.579</p>}
+          value={<p className="text-primary">2.579</p>}
           rightIcon={
-            <div className="[font-family:'DM_Sans-Medium',Helvetica] font-medium text-[#a3aed0] text-[14px] pb-[6px] ">
+            <div className="font-medium text-secondary text-[14px] pb-[6px] ">
               Visitors
             </div>
           }
           rightSubIcon
           rightIconClassName="items-end ml-1 justify-between "
         />
-        <div className="[font-family:'DM_Sans-Bold',Helvetica] font-bold text-[#05cd99] text-[12px] ">
+        <div className="font-bold text-[#05cd99] text-[12px] ">
           <ArrowIcon className="inline" />
           +2.45%
         </div>
